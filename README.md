@@ -25,7 +25,7 @@ Por conta do enunciado estar em português, mantive tudo em linguagem nativa.
 
 ### 1. Clonar o Repositório
 ```bash
-git clone <URL do repositório>
+git clone https://github.com/jonathanhalberstadt/bancario-api
 cd bancario-api
 ```
 
