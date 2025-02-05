@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "a0df0274-af92-495f-ae18-b606cdf5418c",
+		"name": "Bancario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5856191"
+	},
+	"item": [
+		{
+			"name": "Criar conta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero_conta\": 31331,\r\n    \"saldo\": 18000.37\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/conta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"conta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fazer transação",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"forma_pagamento\": \"D\",\r\n    \"numero_conta\": 31331,\r\n    \"valor\": 10000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/transacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"transacao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar conta",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/conta?numero_conta=2345",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"conta"
+					],
+					"query": [
+						{
+							"key": "numero_conta",
+							"value": "2345"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
