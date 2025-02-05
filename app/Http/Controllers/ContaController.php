@@ -32,7 +32,7 @@ class ContaController extends Controller
 
     public function show(Request $request)
     {
-        $numeroConta = $request->query('numero_conta'); // Usando o parâmetro da query string
+        $numeroConta = $request->query('numero_conta');
         
         if (empty($numeroConta)) {
             return response()->json(['message' => 'Número da conta é necessário'], 400);

@@ -15,14 +15,12 @@ class ContaService
 
     public function criarConta(int $numeroConta, float $saldo)
     {
-        // Verifique se a conta já existe antes de criar
         $contaExistente = $this->contaRepository->buscarConta($numeroConta);
 
         if ($contaExistente) {
             return ['message' => 'Conta já existe'];
         }
 
-        // Criar nova conta
         return $this->contaRepository->criarConta($numeroConta, $saldo);
     }
 

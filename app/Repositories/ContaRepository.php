@@ -8,7 +8,6 @@ class ContaRepository
 {
     public function criarConta(int $numeroConta, float $saldo)
     {
-        // Verifica se a conta já existe
         if ($this->buscarConta($numeroConta)) {
             return ['error' => 'A conta já existe'];
         }

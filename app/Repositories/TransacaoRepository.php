@@ -27,7 +27,7 @@ class TransacaoRepository
                 'taxa' => $taxa,
                 'taxa_percentual' => $taxaPercentual,
             ]);
-            throw $e;  // Re-throw the exception to be handled elsewhere
+            throw $e;
         }
     }
 
