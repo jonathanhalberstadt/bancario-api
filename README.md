@@ -1,11 +1,9 @@
 
 # 📌 Bancário API
 
-API RESTful para gestão bancária, desenvolvida em Laravel e Dockerizada para o teste técnico da empresa Objetive (https://rh-objective.s3.amazonaws.com/Desafio_Tecnico_OBJ.pdf).
+API RESTful para gestão bancária, desenvolvida em Laravel e Dockerizada.
 
 A API permite a criação de contas, realização de transações e consulta de saldos, aplicando taxas conforme a forma de pagamento.
-
-Por conta do enunciado estar em português, mantive tudo em linguagem nativa.
 
 ## 🛠 Tecnologias Utilizadas
 
